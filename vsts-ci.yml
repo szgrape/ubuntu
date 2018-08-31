@@ -10,7 +10,8 @@ steps:
 - script: |
     ./configure
     make
-    cp ./hello /home/yong/test/
+    echo i am a test script
+    cp ./hello /home/yong/test/hello.o
     cd /home/yong/test
-    ./hello
+    ./hello.o
   displayName: 'Configure, compile, and run tests'
