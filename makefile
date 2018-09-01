@@ -1,7 +1,11 @@
 cc = arm-linux-gnueabihf-gcc
-prom = hello
+object = hello.o
 source = hello.c
 
-$(prom): $(source)
-	$(cc) -o $(prom) $(source) 
+$(object): $(source)
+	$(cc) -o $(object) $(source) 
+
+.PHONY : clean
+clean:
+	-rm -f $(object)
 
