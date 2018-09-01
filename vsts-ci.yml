@@ -12,4 +12,5 @@ steps:
     make
     echo i am a test script
     scp ./hello.o pi@10.168.62.29:/home/pi/test
+    ssh pi@10.168.62.29 "cd ~/test; ./hello.o"
   displayName: 'Configure, compile, and run tests'
