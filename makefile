@@ -1,4 +1,4 @@
-cc = gcc
+cc = arm-linux-gnueabihf-gcc
 prom = hello
 source = hello.c
 
