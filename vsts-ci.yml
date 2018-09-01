@@ -11,7 +11,5 @@ steps:
     ./configure
     make
     echo i am a test script
-    cp ./hello /home/yong/test/hello.o
-    cd /home/yong/test
-    ./hello.o
+    scp ./hello pi@10.168.62.29:/home/pi/test
   displayName: 'Configure, compile, and run tests'
